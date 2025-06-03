@@ -1,0 +1,255 @@
+2025-06-03 05:14:51.224 | INFO     | __main__:main:32 - Starting Clore Bot Pro...
+2025-06-03 05:14:51.226 | INFO     | __main__:main:36 - Initializing database...
+2025-06-03 05:14:51.316 | INFO     | __main__:main:45 - Starting background services...
+2025-06-03 05:14:51.317 | INFO     | __main__:main:52 - Starting Telegram bot...
+2025-06-03 05:14:51.318 | INFO     | telegram_bot.bot:start:337 - Starting Clore Bot Pro...
+2025-06-03 05:14:51.319 | INFO     | services.monitoring.balance_monitor:start:27 - Balance monitor started
+2025-06-03 05:14:51.321 | INFO     | services.monitoring.server_monitor:start:27 - Server monitor started
+2025-06-03 05:19:44.265 | ERROR    | ai_agent.agent:process_query:202 - Error processing query: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************eawA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-06-03 05:19:51.966 | ERROR    | clore_api.client:_make_request:74 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 05:19:51.967 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 05:24:52.300 | ERROR    | clore_api.client:_make_request:74 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_servers'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 05:24:52.301 | ERROR    | services.monitoring.server_monitor:_check_my_servers:85 - Error checking my servers: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 05:24:52.355 | ERROR    | clore_api.client:_make_request:74 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 05:24:52.356 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 05:29:53.108 | ERROR    | clore_api.client:_make_request:74 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 05:29:53.109 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 05:29:55.081 | ERROR    | ai_agent.agent:process_query:202 - Error processing query: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************eawA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-06-03 05:30:23.212 | ERROR    | ai_agent.agent:process_query:202 - Error processing query: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************eawA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-06-03 05:34:53.729 | ERROR    | clore_api.client:_make_request:74 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 05:34:53.729 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 05:39:54.463 | ERROR    | clore_api.client:_make_request:74 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 05:39:54.464 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 05:44:55.021 | ERROR    | clore_api.client:_make_request:74 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 05:44:55.022 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 05:45:24.527 | ERROR    | clore_api.client:_make_request:74 - HTTP error: Client error '401 Unauthorized' for url 'https://api.clore.ai/v1/wallets'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2025-06-03 05:49:55.709 | ERROR    | clore_api.client:_make_request:74 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 05:49:55.709 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 05:59:57.229 | ERROR    | clore_api.client:_make_request:74 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 05:59:57.230 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 06:01:40.837 | INFO     | __main__:main:61 - Stopping services...
+2025-06-03 06:01:40.838 | INFO     | telegram_bot.bot:stop:355 - Stopping Clore Bot Pro...
+2025-06-03 06:01:40.840 | INFO     | __main__:main:74 - Clore Bot Pro stopped.
+2025-06-03 06:21:50.934 | INFO     | __main__:main:32 - Starting Clore Bot Pro...
+2025-06-03 06:21:50.937 | INFO     | __main__:main:36 - Initializing database...
+2025-06-03 06:21:51.106 | INFO     | __main__:main:45 - Starting background services...
+2025-06-03 06:21:51.107 | INFO     | __main__:main:52 - Starting Telegram bot...
+2025-06-03 06:21:51.109 | INFO     | telegram_bot.bot:start:337 - Starting Clore Bot Pro...
+2025-06-03 06:21:51.112 | INFO     | services.monitoring.balance_monitor:start:27 - Balance monitor started
+2025-06-03 06:21:51.118 | INFO     | services.monitoring.server_monitor:start:27 - Server monitor started
+2025-06-03 06:21:52.013 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.32s
+2025-06-03 06:21:52.371 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 06:21:52.372 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 06:26:52.929 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.57s
+2025-06-03 06:26:53.564 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 06:26:53.565 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 06:27:42.448 | INFO     | __main__:main:61 - Stopping services...
+2025-06-03 06:27:42.448 | INFO     | telegram_bot.bot:stop:355 - Stopping Clore Bot Pro...
+2025-06-03 06:27:42.448 | INFO     | __main__:main:74 - Clore Bot Pro stopped.
+2025-06-03 06:27:56.032 | INFO     | __main__:main:32 - Starting Clore Bot Pro...
+2025-06-03 06:27:56.034 | INFO     | __main__:main:36 - Initializing database...
+2025-06-03 06:27:56.138 | INFO     | __main__:main:45 - Starting background services...
+2025-06-03 06:27:56.187 | INFO     | __main__:main:52 - Starting Telegram bot...
+2025-06-03 06:27:56.187 | INFO     | telegram_bot.bot:start:337 - Starting Clore Bot Pro...
+2025-06-03 06:27:56.190 | INFO     | services.monitoring.balance_monitor:start:27 - Balance monitor started
+2025-06-03 06:27:56.191 | INFO     | services.monitoring.server_monitor:start:27 - Server monitor started
+2025-06-03 06:27:57.044 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.38s
+2025-06-03 06:27:57.448 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 06:27:57.449 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 06:29:35.259 | INFO     | __main__:main:61 - Stopping services...
+2025-06-03 06:29:35.259 | INFO     | telegram_bot.bot:stop:355 - Stopping Clore Bot Pro...
+2025-06-03 06:29:35.260 | INFO     | __main__:main:74 - Clore Bot Pro stopped.
+2025-06-03 07:31:02.921 | INFO     | __main__:main:32 - Starting Clore Bot Pro...
+2025-06-03 07:31:02.922 | INFO     | __main__:main:36 - Initializing database...
+2025-06-03 07:31:03.027 | INFO     | __main__:main:45 - Starting background services...
+2025-06-03 07:31:03.028 | INFO     | __main__:main:52 - Starting Telegram bot...
+2025-06-03 07:31:03.029 | INFO     | telegram_bot.bot:start:337 - Starting Clore Bot Pro...
+2025-06-03 07:31:03.030 | INFO     | services.monitoring.balance_monitor:start:27 - Balance monitor started
+2025-06-03 07:31:03.034 | INFO     | services.monitoring.server_monitor:start:27 - Server monitor started
+2025-06-03 07:31:03.828 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.47s
+2025-06-03 07:31:04.378 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 07:31:04.379 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 07:36:04.924 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.59s
+2025-06-03 07:36:05.539 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 07:36:05.540 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 07:41:06.208 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.47s
+2025-06-03 07:41:06.706 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 07:41:06.707 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 07:46:07.312 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.54s
+2025-06-03 07:46:07.873 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 07:46:07.874 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 07:51:08.504 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.51s
+2025-06-03 07:51:09.035 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 07:51:09.036 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 07:56:09.623 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.55s
+2025-06-03 07:56:10.240 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 07:56:10.240 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 08:01:10.919 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.47s
+2025-06-03 08:01:11.411 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 08:01:11.411 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 08:06:11.893 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.66s
+2025-06-03 08:07:07.835 | INFO     | ai_agent.agent:process_query:164 - Processing query: покажи мои серверы
+2025-06-03 08:07:07.835 | INFO     | ai_agent.agent:process_query:173 - Handling search request
+2025-06-03 08:07:12.732 | INFO     | ai_agent.agent:process_query:164 - Processing query: это не мои
+2025-06-03 08:07:12.733 | INFO     | ai_agent.agent:process_query:225 - Handling unknown query
+2025-06-03 08:07:31.783 | INFO     | ai_agent.agent:process_query:164 - Processing query: да
+2025-06-03 08:07:31.783 | INFO     | ai_agent.agent:process_query:225 - Handling unknown query
+2025-06-03 08:11:13.527 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.41s
+2025-06-03 08:11:13.964 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 08:11:13.965 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 08:16:14.519 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.58s
+2025-06-03 08:16:15.147 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 08:16:15.147 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 08:21:15.789 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.50s
+2025-06-03 08:21:16.311 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 08:21:16.312 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 08:26:17.123 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.33s
+2025-06-03 08:26:17.502 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 08:26:17.503 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 08:31:18.113 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.53s
+2025-06-03 08:31:18.677 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 08:31:18.679 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 08:36:19.404 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.42s
+2025-06-03 08:36:19.860 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 08:36:19.861 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 08:41:20.403 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.60s
+2025-06-03 08:41:21.046 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 08:41:21.047 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 08:46:21.933 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.26s
+2025-06-03 08:46:22.232 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 08:46:22.233 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 08:51:22.938 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.46s
+2025-06-03 08:51:23.420 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 08:51:23.420 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 08:56:24.088 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.49s
+2025-06-03 08:56:24.600 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 08:56:24.601 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 09:01:25.300 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.44s
+2025-06-03 09:01:25.769 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 09:01:25.770 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 09:06:26.503 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.43s
+2025-06-03 09:06:27.019 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 09:06:27.020 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 09:11:27.695 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.49s
+2025-06-03 09:11:28.214 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 09:11:28.214 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 09:16:28.888 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.47s
+2025-06-03 09:16:29.480 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 09:16:29.481 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 09:21:30.031 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.58s
+2025-06-03 09:21:30.641 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 09:21:30.642 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 09:26:31.325 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.47s
+2025-06-03 09:26:31.819 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 09:26:31.820 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 09:31:32.544 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.43s
+2025-06-03 09:31:32.999 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 09:31:33.000 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 09:36:33.642 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.51s
+2025-06-03 09:36:34.185 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 09:36:34.185 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 09:41:34.737 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.59s
+2025-06-03 09:41:35.357 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 09:41:35.357 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 09:46:35.994 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.51s
+2025-06-03 09:46:36.534 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 09:46:36.534 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 09:51:37.204 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.47s
+2025-06-03 09:51:37.700 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 09:51:37.701 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 09:56:38.117 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.72s
+2025-06-03 09:56:38.907 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 09:56:38.907 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 10:01:39.515 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.53s
+2025-06-03 10:01:40.073 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 10:01:40.074 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 10:06:40.613 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.59s
+2025-06-03 10:06:41.240 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 10:06:41.241 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 10:11:41.921 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.46s
+2025-06-03 10:11:42.534 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 10:11:42.535 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 10:16:43.297 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.39s
+2025-06-03 10:16:43.715 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 10:16:43.716 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 10:21:44.238 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.61s
+2025-06-03 10:21:44.874 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 10:21:44.875 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 10:26:45.527 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.49s
+2025-06-03 10:26:46.041 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 10:26:46.041 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 10:28:47.060 | INFO     | ai_agent.agent:process_query:164 - Processing query: баланс
+2025-06-03 10:29:05.912 | INFO     | ai_agent.agent:process_query:164 - Processing query: на сколько он изменился за час?
+2025-06-03 10:29:05.913 | INFO     | ai_agent.agent:process_query:225 - Handling unknown query
+2025-06-03 10:31:46.629 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.55s
+2025-06-03 10:31:47.214 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 10:31:47.215 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 10:36:48.005 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.36s
+2025-06-03 10:36:48.385 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 10:36:48.386 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 10:41:48.940 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.58s
+2025-06-03 10:41:49.539 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 10:41:49.540 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 10:46:50.220 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.48s
+2025-06-03 10:46:50.724 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 10:46:50.726 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 10:51:51.412 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.46s
+2025-06-03 10:51:51.896 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 10:51:51.897 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}
+2025-06-03 10:56:52.787 | DEBUG    | clore_api.client:_make_request:63 - Rate limiting: waiting 0.26s
+2025-06-03 10:56:53.137 | ERROR    | clore_api.client:_make_request:86 - HTTP error: Client error '429 Too Many Requests' for url 'https://api.clore.ai/v1/my_orders?return_completed=false'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-06-03 10:56:53.138 | ERROR    | services.monitoring.server_monitor:_check_active_orders:137 - Error checking active orders: Clore API Error [-1]: HTTP 429: {"code":5}

@@ -1,0 +1,132 @@
+"""
+Тесты для Clore API клиента
+"""
+import pytest
+from unittest.mock import AsyncMock, MagicMock
+from clore_api.client import CloreAPIClient, CloreAPIError
+
+
+class TestCloreAPIClient:
+    """Тесты для CloreAPIClient"""
+    
+    @pytest.fixture
+    def client(self):
+        """Создать клиент для тестов"""
+        return CloreAPIClient("test_api_key")
+    
+    @pytest.fixture
+    def mock_response(self):
+        """Мок успешного ответа"""
+        return {
+            "code": 0,
+            "wallets": [
+                {
+                    "name": "CLORE-Blockchain",
+                    "balance": 100.5,
+                    "deposit": "clore_address"
+                }
+            ]
+        }
+    
+    @pytest.mark.asyncio
+    async def test_get_wallets_success(self, client, mock_response, mocker):
+        """Тест успешного получения кошельков"""
+        # Мокаем HTTP запрос
+        mock_request = mocker.patch.object(
+            client, 
+            '_make_request',
+            return_value=mock_response
+        )
+        
+        # Вызываем метод
+        result = await client.get_wallets()
+        
+        # Проверяем результат
+        assert result == mock_response
+        mock_request.assert_called_once_with("GET", "wallets")
+    
+    @pytest.mark.asyncio
+    async def test_api_error_handling(self, client, mocker):
+        """Тест обработки ошибок API"""
+        # Мокаем ответ с ошибкой
+        error_response = {
+            "code": 3,
+            "error": "Invalid API token"
+        }
+        
+        mocker.patch.object(
+            client,
+            '_make_request',
+            return_value=error_response
+        )
+        
+        # Проверяем, что выбрасывается исключение
+        with pytest.raises(CloreAPIError) as exc_info:
+            await client.get_wallets()
+        
+        assert exc_info.value.code == 3
+        assert "Invalid API token" in str(exc_info.value)
+    
+    def test_extract_server_price(self, client):
+        """Тест извлечения цены сервера"""
+        # Тест с USD ценой
+        server_data = {
+            "price": {
+                "on_demand": {"CLORE-Blockchain": 25},
+                "usd": {"on_demand_clore": 0.5}
+            }
+        }
+        
+        price, currency = client.extract_server_price(server_data)
+        assert price == 0.5
+        assert currency == "USD"
+        
+        # Тест с фиксированной CLORE ценой
+        server_data = {
+            "price": {
+                "on_demand": {"CLORE-Blockchain": 25},
+                "usd": {}
+            }
+        }
+        
+        price, currency = client.extract_server_price(server_data)
+        assert price == 0.5  # 25 * 0.02 (курс по умолчанию)
+        assert currency == "CLORE_FIXED"
+    
+    def test_extract_gpu_info(self, client):
+        """Тест извлечения информации о GPU"""
+        # Тест с множественными GPU
+        gpu_string = "4x NVIDIA GeForce RTX 3070"
+        count, model = client.extract_gpu_info(gpu_string)
+        assert count == 4
+        assert model == "RTX 3070"
+        
+        # Тест с одной GPU
+        gpu_string = "NVIDIA A100"
+        count, model = client.extract_gpu_info(gpu_string)
+        assert count == 1
+        assert model == "NVIDIA A100"
+    
+    def test_format_server_short(self, client):
+        """Тест форматирования краткой информации о сервере"""
+        server_data = {
+            "id": 12345,
+            "specs": {
+                "gpu": "2x RTX 4090",
+                "gpuram": 24,
+                "cpu": "AMD EPYC 7763",
+                "pcie_width": 16
+            },
+            "price": {
+                "on_demand": {"CLORE-Blockchain": 100},
+                "usd": {"on_demand_clore": 2.0}
+            },
+            "rating": {"avg": 4.5, "cnt": 20}
+        }
+        
+        result = client.format_server_short(server_data)
+        
+        assert "Server #12345" in result
+        assert "2x RTX 4090" in result
+        assert "$2.00/day" in result
+        assert "⭐ 4.5" in result

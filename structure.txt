@@ -1,0 +1,65 @@
+‘âàãªâãà  ¯ ¯®ª â®¬  ARHIV
+‘¥à¨©­ë© ­®¬¥à â®¬ : 3C3D-9D77
+E:.
+³   .env.example
+³   config.py
+³   demo.py
+³   docker-compose.yml
+³   Dockerfile
+³   main.py
+³   Makefile
+³   README.md
+³   requirements.txt
+³   setup.py
+³   structure.txt
+³   ‘âàãªâãà  ¯à®¥ªâ  Clore Bot Pro.pdf
+³   
+ÃÄÄÄai_agent
+³       agent.py
+³       __init__.py
+³       
+ÃÄÄÄclore_api
+³       client.py
+³       __init__.py
+³       
+ÃÄÄÄdatabase
+³       crud.py
+³       models.py
+³       session.py
+³       __init__.py
+³       
+ÃÄÄÄservices
+³   ³   alerts.py
+³   ³   __init__.py
+³   ³   
+³   ÀÄÄÄmonitoring
+³           balance_monitor.py
+³           hunt_monitor.py
+³           server_monitor.py
+³           __init__.py
+³           
+ÃÄÄÄtelegram_bot
+³   ³   bot.py
+³   ³   __init__.py
+³   ³   
+³   ÃÄÄÄhandlers
+³   ³       __init__.py
+³   ³       
+³   ÃÄÄÄkeyboards
+³   ³       inline.py
+³   ³       __init__.py
+³   ³       
+³   ÃÄÄÄmiddlewares
+³   ³       auth.py
+³   ³       __init__.py
+³   ³       
+³   ÀÄÄÄstates
+³           __init__.py
+³           
+ÃÄÄÄtests
+³       test_clore_client.py³
+³       
+ÀÄÄÄutils
+        formatters.py
+        __init__.py
+        
