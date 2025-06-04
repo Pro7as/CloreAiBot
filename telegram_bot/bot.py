@@ -312,8 +312,13 @@ class CloreBot:
             
             agent = self.agents[user_id]
             
-            # Выполняем запрос
-            response = await agent.process_query(query)
+            # Выполняем запрос с контекстом пользователя
+            user_context = {
+                'user_id': user_id,
+                'username': message.from_user.username,
+                'first_name': message.from_user.first_name
+            }
+            response = await agent.process_query(query, user_context)
             
             # Отправляем ответ
             await loading_msg.delete()
